@@ -7,8 +7,22 @@ sayHi();
 
 // anonymous function
 
-sayBye = function(){
+var sayBye = function(){
     console.log("ok bye");
 }
 
 sayBye();
+
+
+// passing function to another function
+
+var Myname = function(){
+    console.log('Hello Rahat');
+}
+
+function callFunction(fun){
+    fun();
+}
+
+
+callFunction(Myname);
